@@ -47,13 +47,13 @@ body {
 }
 
 a {
-  color: #7d1ac9;
+  color: #d29bfd;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
 }
 a:hover, a:active, a:focus {
-  color: #7d1ac9 !important;
+  color: #7f18ce;
   outline: none;
   text-decoration: none;
 }
@@ -1760,8 +1760,19 @@ form label {
   border: 2px solid #d29bfd;
 }
 .btn-danger:hover, .btn-danger:focus, .btn-danger:active {
-  background: #7d1ac9 !important;
-  border-color: #7d1ac9 !important;
+  background: #7f18ce !important;
+  border-color: #7f18ce !important;
+  color: #fff;
+}
+
+.btn-outline-danger{
+  border: none;
+}
+.btn-outline-danger:hover, .btn-outline-danger:focus, .btn-outline-danger:active{
+  color: #7f18ce !important;
+  border: 1px solid;
+  border-color: #7f18ce !important;
+
 }
 .btn-danger.btn-outline {
   background: transparent;
