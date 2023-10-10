@@ -47,13 +47,13 @@ body {
 }
 
 a {
-  color: #d29bfd;
+  color: #7d1ac9;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
 }
 a:hover, a:active, a:focus {
-  color: #d29bfd;
+  color: #7d1ac9 !important;
   outline: none;
   text-decoration: none;
 }
@@ -1760,8 +1760,8 @@ form label {
   border: 2px solid #d29bfd;
 }
 .btn-danger:hover, .btn-danger:focus, .btn-danger:active {
-  background: #d43f3a !important;
-  border-color: #d43f3a !important;
+  background: #7d1ac9 !important;
+  border-color: #7d1ac9 !important;
 }
 .btn-danger.btn-outline {
   background: transparent;
