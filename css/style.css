@@ -318,6 +318,13 @@ h1, h2, h3, h4, h5, h6, figure {
 @media screen and (max-width: 768px) {
   .fh5co-cover {
     height: 600px;
+    background-position: 150px 0px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .fh5co-cover {
+    height: 600px;
+    background-position: -300px 0px !important;
   }
 }
 .fh5co-cover .display-t,
