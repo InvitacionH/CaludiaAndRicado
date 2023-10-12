@@ -2,15 +2,29 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-	<head>
+<!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
+
+<head>
+
+	<script>
+	
+		document.addEventListener('click', function () {
+			document.getElementById('musica').play()
+		}, {
+			once: true
+		});
+
+		
+	</script>
+
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Nuestra Boda</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Claudia y Ricardo" />
 
-  <!-- 
+	<!-- 
 	//////////////////////////////////////////////////////
 
 	
@@ -18,20 +32,21 @@
 	//////////////////////////////////////////////////////
 	 -->
 
-  	<!-- Facebook and Twitter integration -->
-	<meta property="og:title" content=""/>
-	<meta property="og:image" content=""/>
-	<meta property="og:url" content=""/>
-	<meta property="og:site_name" content=""/>
-	<meta property="og:description" content=""/>
+	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content="" />
+	<meta property="og:image" content="" />
+	<meta property="og:url" content="" />
+	<meta property="og:site_name" content="" />
+	<meta property="og:description" content="" />
 	<meta name="twitter:title" content="" />
 	<meta name="twitter:image" content="" />
 	<meta name="twitter:url" content="" />
 	<meta name="twitter:card" content="" />
 
-	<link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,400italic,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,400italic,700' rel='stylesheet'
+		type='text/css'>
 	<link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
-	
+
 	<!-- Animate.css -->
 	<link rel="stylesheet" href="css/animate.css">
 	<!-- Icomoon Icon Fonts-->
@@ -57,18 +72,23 @@
 	<![endif]-->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
-	<body>
-		
+
+<body>
+
+	<audio id="musica" loop>
+		<source src="Audio/Perfect alto saxophone.mp3">
+	</audio>
+
 	<div class="fh5co-loader"></div>
-	
+
 	<div id="page">
-	<nav class="fh5co-nav" role="navigation">
-		<div class="container">
-			<div class="row">
-				<div class="col-xs-2">
-					<div id="fh5co-logo"><a href="index.html">Nuestra Boda<strong>.</strong></a></div>
-				</div>
-				<!-- <div class="col-xs-10 text-right menu-1">
+		<nav class="fh5co-nav" role="navigation">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-2">
+						<div id="fh5co-logo"><a href="index.html">Nuestra Boda<strong>.</strong></a></div>
+					</div>
+					<!-- <div class="col-xs-10 text-right menu-1">
 					<ul>
 						<li class="active"><a href="index.html">Home</a></li>
 						<li><a href="about.html">Story</a></li>
@@ -93,165 +113,183 @@
 						<li><a href="contact.html">Contact</a></li>
 					</ul>
 				</div> -->
-			</div>
-			
-		</div>
-	</nav>
+				</div>
 
-	<header id="fh5co-header" class="fh5co-cover" role="banner" style="background-image:url(images/img_bg_2.jpg);" data-stellar-background-ratio="0.5">
-		<div class="overlay"></div>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-8 col-md-offset-2 text-center">
+			</div>
+		</nav>
+
+		<header id="fh5co-header" class="fh5co-cover" role="banner" style="background-image:url(images/img_bg_2.jpg);"
+			data-stellar-background-ratio="0.5">
+			<div class="overlay"></div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 text-center">
+						<div class="display-t">
+							<div class="display-tc animate-box" data-animate-effect="fadeIn">
+								<h1>Claudia &amp; Ricardo</h1>
+								<h2>Nuestra boda inicia en</h2>
+								<div class="simply-countdown simply-countdown-one"></div>
+								<!-- <p><a href="#" class="btn btn-default btn-sm">Save the date</a></p> -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<div id="fh5co-couple">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
+						<h2 style="font-weight: normal;">Te invitamos a celebrar nuestra boda</h2>
+						<!-- <p>Te invitamos a celebrar nuestra boda</p> -->
+						<h3>16 de Diciembre 2023, Sta. María Acolman, Edo. de México</h3>
+
+					</div>
+				</div>
+				<div class="couple-wrap animate-box">
+					<div class="couple-half">
+						<div class="groom">
+							<img src="images/groom.jpg" alt="groom" class="img-responsive">
+						</div>
+						<div class="desc-groom">
+							<h3>Ricardo Juárez Gonzaga</h3>
+						</div>
+					</div>
+					<p class="heart text-center"><i class="icon-heart2"></i></p>
+					<div class="couple-half">
+						<div class="bride">
+							<img src="images/bride.jpg" alt="groom" class="img-responsive">
+						</div>
+						<div class="desc-bride">
+							<h3>Claudia Cuevas García </h3>
+						</div>
+					</div>
+				</div>
+				<br>
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box"
+						style="margin-top:20px;">
+						<p>Dios juntó nuestras manos y nos señaló el camino, nosotros uniremos nuestras vidas y lo
+							recorreremos con amor y fe</p>
+					</div>
+				</div>
+				<div class="couple-wrap animate-box">
+					<div class="couple-half">
+
+						<div class="desc-groom">
+							<h3 class="sinEspacio">Padres del novio:</h3>
+							<p class="sinEspacio">Esteban Juárez Alcántara</p>
+							<p><i class="fa-solid fa-cross fa-beat-fade" style="padding-right: 5px;"></i>Francisca
+								Gonzaga Castillo</p>
+						</div>
+					</div>
+					<div class="couple-half">
+						<div class="desc-bride">
+							<h3 class="sinEspacio">Padres de la novia:</h3>
+							<p class="sinEspacio">Arnulfo Cuevas Soto</p>
+							<p><i class="fa-solid fa-cross fa-beat-fade" style="padding-right: 5px;"> </i>Maria
+								Guadalupe Garcia Priego</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-12" style="display: inline-block;">
+					<div class="col-md-8 col-md-offset-2 text-center animate-box">
+						<h3 class="padrinosStyle">Padrinos:</h3>
+						<p>María Elisa Cuevas García y José Fernando Fragoso Reyes</p>
+					</div>
+				</div>
+				<div class="col-md-12">
+					<div class="col-md-8 col-md-offset-2 text-center animate-box">
+						<a class="btn btn-outline-danger"
+							href="https://wa.me/525525683450?text=Confirmo mi asistencia a la boda"
+							role="button">Confirma tu asistencia
+							<i style="display: block; font-size: 30px;"
+								class="fa-brands fa-whatsapp fa-beat-fade"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="fh5co-event" class="fh5co-bg" style="background-image:url(images/img_bg_3.jpg);">
+			<div class="overlay"></div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
+						<!-- <span>Nuestro evento especial</span> -->
+						<h2>Nuestro evento especial</h2>
+					</div>
+				</div>
+				<div class="row">
 					<div class="display-t">
-						<div class="display-tc animate-box" data-animate-effect="fadeIn">
-							<h1>Claudia &amp; Ricardo</h1>
-							<h2>Nuestra boda inicia en</h2>
-							<div class="simply-countdown simply-countdown-one"></div>
-							<!-- <p><a href="#" class="btn btn-default btn-sm">Save the date</a></p> -->
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</header>
+						<div class="display-tc">
+							<div style="z-index: 20;" class="col-md-10 col-md-offset-1">
+								<div class="col-md-6 col-sm-6 text-center">
+									<div class="event-wrap animate-box">
+										<h3>Ceremonia</h3>
+										<div class="event-col">
+											<i class="icon-clock"></i>
+											<span>2:00 PM</span>
+											<span>3:00 PM</span>
+										</div>
+										<div class="event-col">
+											<i class="icon-calendar"></i>
+											<span>Sabado 16</span>
+											<span>Diciembre, 2023</span>
+										</div>
+										<p>La misa religiosa será celebrada en la iglesia de San Bartolomé Apostol,
+											Acolman, Edo. de México.</p>
+										<br>
+										<a class="btn btn-danger" href="https://maps.app.goo.gl/K8SZvStSLp9CbLuJ9"
+											role="button">Como llegar<i
+												class="fa-solid fa-map-location-dot fa-beat-fade"
+												style="padding-left: 5px;"></i></a>
+										<!-- <button type="button" class="btn btn-danger">Como llegar</button> -->
 
-	<div id="fh5co-couple">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
-					<h2 style="font-weight: normal;">Te invitamos a celebrar nuestra boda</h2>
-					<!-- <p>Te invitamos a celebrar nuestra boda</p> -->
-					<h3>16 de Diciembre 2023, Sta. María Acolman, Edo. de México</h3>
-
-				</div>
-			</div>
-			<div class="couple-wrap animate-box">
-				<div class="couple-half">
-					<div class="groom">
-						<img src="images/groom.jpg" alt="groom" class="img-responsive">
-					</div>
-					<div class="desc-groom">
-						<h3>Ricardo Juárez Gonzaga</h3>
-					</div>
-				</div>
-				<p class="heart text-center"><i class="icon-heart2"></i></p>
-				<div class="couple-half">
-					<div class="bride">
-						<img src="images/bride.jpg" alt="groom" class="img-responsive">
-					</div>
-					<div class="desc-bride">
-						<h3>Claudia Cuevas García </h3>
-					</div>
-				</div>
-			</div>
-			<br>
-			<div class="row">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box" style="margin-top:20px;">
-					<p>Dios juntó nuestras manos y nos señaló el camino, nosotros uniremos nuestras vidas y lo recorreremos con amor y fe</p>
-				</div>
-			</div>	
-			<div class="couple-wrap animate-box">
-				<div class="couple-half">
-					
-					<div class="desc-groom">
-						<h3 class="sinEspacio">Padres del novio:</h3>
-						<p class="sinEspacio">Esteban Juárez Alcántara</p>
-						<p><i class="fa-solid fa-cross fa-beat-fade" style="padding-right: 5px;"></i>Francisca Gonzaga Castillo</p>
-					</div>
-				</div>
-				<div class="couple-half">					
-					<div class="desc-bride">
-						<h3 class="sinEspacio">Padres de la novia:</h3>
-						<p class="sinEspacio">Arnulfo Cuevas Soto</p>
-						<p><i class="fa-solid fa-cross fa-beat-fade" style="padding-right: 5px;"> </i>Maria Guadalupe Garcia Priego</p>
-					</div>
-				</div>
-			</div>
-			
-			<div class="col-md-12" style="display: inline-block;"		>
-				<div class="col-md-8 col-md-offset-2 text-center animate-box">
-					<h3 class="padrinosStyle">Padrinos:</h3>
-					<p>María Elisa Cuevas García y José Fernando Fragoso Reyes</p>
-				</div>
-			</div>	
-			<div class="col-md-12">
-				<div class="col-md-8 col-md-offset-2 text-center animate-box">
-					<a  class="btn btn-outline-danger" href="https://wa.me/525525683450?text=Confirmo mi asistencia a la boda" role="button">Confirma tu asistencia
-						<i style="display: block; font-size: 30px;" class="fa-brands fa-whatsapp fa-beat-fade"></i></a>
-				</div>
-			</div>	
-		</div>
-	</div>
-
-	<div id="fh5co-event" class="fh5co-bg" style="background-image:url(images/img_bg_3.jpg);">
-		<div class="overlay"></div>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
-					<!-- <span>Nuestro evento especial</span> -->
-					<h2>Nuestro evento especial</h2>
-				</div>
-			</div>
-			<div class="row">
-				<div class="display-t">
-					<div class="display-tc">
-						<div style="z-index: 20;" class="col-md-10 col-md-offset-1">
-							<div class="col-md-6 col-sm-6 text-center">
-								<div class="event-wrap animate-box">
-									<h3>Ceremonia</h3>
-									<div class="event-col">
-										<i class="icon-clock"></i>
-										<span>2:00 PM</span>
-										<span>3:00 PM</span>
 									</div>
-									<div class="event-col">
-										<i class="icon-calendar"></i>
-										<span>Sabado 16</span>
-										<span>Diciembre, 2023</span>
-									</div>
-									<p>La misa religiosa será celebrada en la iglesia de San Bartolomé Apostol, Acolman, Edo. de México.</p>
-									<br>
-									<a class="btn btn-danger" href="https://maps.app.goo.gl/K8SZvStSLp9CbLuJ9" role="button">Como llegar<i class="fa-solid fa-map-location-dot fa-beat-fade" style="padding-left: 5px;"></i></a>
-									<!-- <button type="button" class="btn btn-danger">Como llegar</button> -->
+								</div>
+								<div class="col-md-6 col-sm-6 text-center">
+									<div class="event-wrap animate-box">
+										<h3>Celebración</h3>
+										<div class="event-col">
+											<i class="icon-clock"></i>
+											<span>3:00 PM</span>
+											<span>02:00 AM</span>
+										</div>
+										<div class="event-col">
+											<i class="icon-calendar"></i>
+											<span>Sabado 16</span>
+											<span>Diciembre, 2023</span>
+										</div>
+										<p>La celebración se llevara acabo en la casa de los novios</p>
+										<a class="btn btn-danger" href="https://maps.app.goo.gl/53hQCx73F4TNBzh96"
+											role="button">Como llegar<i
+												class="fa-solid fa-map-location-dot fa-beat-fade"
+												style="padding-left: 5px;"></i></a>
 
+										<!-- <button type="button" class="btn btn-danger">Como llegar</button> -->
+									</div>
+								</div>
+
+							</div>
+							<div class="col-md-12">
+								<div class="col-md-8 col-md-offset-2 text-center animate-box">
+									<a style="margin-top: 60px;" class="btn btn-danger"
+										href="https://wa.me/525525683450?text=Confirmo mi asistencia a la boda"
+										role="button">Confirma tu asistencia
+										<i style="display: block; font-size: 30px;"
+											class="fa-brands fa-whatsapp fa-beat-fade"></i></a>
 								</div>
 							</div>
-							<div class="col-md-6 col-sm-6 text-center">
-								<div class="event-wrap animate-box">
-									<h3>Celebración</h3>
-									<div class="event-col">
-										<i class="icon-clock"></i>
-										<span>3:00 PM</span>
-										<span>02:00 AM</span>
-									</div>
-									<div class="event-col">
-										<i class="icon-calendar"></i>
-										<span>Sabado 16</span>
-										<span>Diciembre, 2023</span>
-									</div>
-									<p>La celebración se llevara acabo en la casa de los novios</p>
-									<a class="btn btn-danger" href="https://maps.app.goo.gl/53hQCx73F4TNBzh96" role="button">Como llegar<i class="fa-solid fa-map-location-dot fa-beat-fade" style="padding-left: 5px;"></i></a>
-
-									<!-- <button type="button" class="btn btn-danger">Como llegar</button> -->
-								</div>
-							</div>
-							
-						</div>
-						<div class="col-md-12">
-							<div class="col-md-8 col-md-offset-2 text-center animate-box">
-								<a style="margin-top: 60px;" class="btn btn-danger" href="https://wa.me/525525683450?text=Confirmo mi asistencia a la boda" role="button">Confirma tu asistencia
-									<i style="display: block; font-size: 30px;" class="fa-brands fa-whatsapp fa-beat-fade"></i></a>
-							</div>
 						</div>
 					</div>
+
 				</div>
-				
 			</div>
 		</div>
-	</div>
 
-	<!-- <div id="fh5co-couple-story">
+		<!-- <div id="fh5co-couple-story">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
@@ -305,7 +343,7 @@
 		</div>
 	</div> -->
 
-	<!-- <div id="fh5co-gallery" class="fh5co-section-gray">
+		<!-- <div id="fh5co-gallery" class="fh5co-section-gray">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
@@ -401,7 +439,7 @@
 		</div>
 	</div> -->
 
-	<!-- <div id="fh5co-counter" class="fh5co-bg fh5co-counter" style="background-image:url(images/img_bg_5.jpg);">
+		<!-- <div id="fh5co-counter" class="fh5co-bg fh5co-counter" style="background-image:url(images/img_bg_5.jpg);">
 		<div class="overlay"></div>
 		<div class="container">
 			<div class="row">
@@ -453,7 +491,7 @@
 		</div>
 	</div> -->
 
-	<!-- <div id="fh5co-testimonial">
+		<!-- <div id="fh5co-testimonial">
 		<div class="container">
 			<div class="row">
 				<div class="row animate-box">
@@ -597,15 +635,15 @@
 		</div>
 	</div> -->
 
-	<footer id="fh5co-footer" role="contentinfo">
-		<div class="container">
+		<footer id="fh5co-footer" role="contentinfo">
+			<div class="container">
 
-			<div class="row copyright">
-				<div class="col-md-12 text-center">
-					<p>
-						<small class="block">&copy; Designed by hiramgo 2023. All Rights Reserved.</small> 
-					</p>
-					<!-- <p>
+				<div class="row copyright">
+					<div class="col-md-12 text-center">
+						<p>
+							<small class="block">&copy; Designed by hiramgo 2023. All Rights Reserved.</small>
+						</p>
+						<!-- <p>
 						<ul class="fh5co-social-icons">
 							<li><a href="#"><i class="icon-twitter"></i></a></li>
 							<li><a href="#"><i class="icon-facebook"></i></a></li>
@@ -613,17 +651,50 @@
 							<li><a href="#"><i class="icon-dribbble"></i></a></li>
 						</ul>
 					</p> -->
+					</div>
 				</div>
-			</div>
 
-		</div>
-	</footer>
+			</div>
+		</footer>
 	</div>
 
 	<div class="gototop js-top">
 		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
 	</div>
-	
+
+
+
+	<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+		Launch working modal
+	</button>
+
+
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content text-center">
+				<div class="modal-header ">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+							aria-hidden="true">&times;</span></button>
+					<h2 style="font-weight: bold; margin-top: 0px !important" class="modal-title padrinosStyle animate-box" data-animate-effect="fadeIn" id="myModalLabel">Gracias</h2>
+				</div>
+				<div class="modal-body text-center">
+					
+					
+					<h3 style="color:darkgrey;" class="padrinosStyle animate-box">Por formar parte de este día tan especial</h3>
+					<p>
+						<i style="display: block; font-size: 40px; color: red;" class="fa-solid fa-heart fa-beat-fade animate-box"></i>
+					</p>
+					<h3 style="color:grey; font-weight: bold;" class="padrinosStyle animate-box">Claudia &amp; Ricardo</h3>
+
+					
+				</div>
+				<div style="text-align: center;" class="modal-footer">
+					<button type="button" class="btn btn-primary" data-dismiss="modal">Continuar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
 	<!-- jQuery -->
 	<script src="js/jquery.min.js"></script>
 	<!-- jQuery Easing -->
@@ -649,25 +720,28 @@
 	<script src="js/main.js"></script>
 
 	<script>
-    var d = new Date(new Date().getTime() + 200 * 120 * 120 * 2000);
 
-    // default example
-    simplyCountdown('.simply-countdown-one', {
-        year: 2023,
-        month: 12,
-        day: 16,
-		hours: 14
-    });
+$('#myModal').modal('show');
 
-    //jQuery example
-    $('#simply-countdown-losange').simplyCountdown({
-        year: d.getFullYear(),
-        month: d.getMonth() + 1,
-        day: d.getDate(),
-        enableUtc: false
-    });
-</script>
+		var d = new Date(new Date().getTime() + 200 * 120 * 120 * 2000);
 
-	</body>
+		// default example
+		simplyCountdown('.simply-countdown-one', {
+			year: 2023,
+			month: 12,
+			day: 16,
+			hours: 14
+		});
+
+		//jQuery example
+		$('#simply-countdown-losange').simplyCountdown({
+			year: d.getFullYear(),
+			month: d.getMonth() + 1,
+			day: d.getDate(),
+			enableUtc: false
+		});
+	</script>
+
+</body>
+
 </html>
-
